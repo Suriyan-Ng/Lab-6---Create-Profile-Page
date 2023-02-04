@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #898AA6; */
+    background-color: pink;
+    /* background-image: url(); */
+}
+
+
+/*------------------------------------------------------------------*/
+
+.container {
+    width: 500px;
+    height: 700px;
+    height: 700px;
+    /* background-color: #fff; */
+    background-color: white;
+    box-shadow: 1px 1px #888888;
+    border-radius: 15px;
+    display: flex;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+/*===================================================================*/
+
+.container .col-right {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*------------------------------------------------------------------*/
+
+.container .col-right .logo {
+    font-size: 48px;
+    font-weight: 700;
+    color: #F94C66;
+    -webkit-text-stroke: 1px #000;
+}
+
+
+/*------------------------------------------------------------------*/
+
+.container .col-right .text-welcome {
+    font-size: 24px;
+    font-weight: 500;
+    color: #35589A;
+}
+
+
+/*------------------------------------------------------------------*/
+
+.container .col-right .text-detail {
+    font-size: 18px;
+    font-weight: 400;
+    color: #35589A;
+}
+
+
+/*===================================================================*/
+
+.button1 {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    /* border: 2px solid #35589A; */
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/*===================================================================*/
+
+.privacy {
+    height: 70%;
+    width: 80%;
+    border: 1px solid #ccc;
+    font: 16px/26px Georgia, Garamond, Serif;
+    overflow: auto;
+}
+
+.privacy .logo_inside {
+    font-size: 18px;
+    font-weight: 700;
+    color: #F94C66;
+    -webkit-text-stroke: 1px #000;
+}
+
+.paragraph_1 {
+    font-size: 16px;
+    text-justify: inter-word;
+    /* hyphens: auto; */
+}
+
+.container .col-right .privacy .paragraph_1 .notice {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.container .col-right .privacy .paragraph_1 .notice {
+    background-color: white;
+    color: blue;
+    text-decoration: underline;
+    /* border: 2px solid #35589A; */
+}
+
+.container .col-right .privacy .paragraph_1 .notice:hover {
+    /* background-color: #4CAF50; */
+    /* color: white; */
+    color: blue;
+    font-size: 22px;
+}

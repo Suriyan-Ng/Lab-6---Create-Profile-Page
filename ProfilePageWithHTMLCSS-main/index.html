@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rotate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <div class="headertop">
+            <div class="#">
+                <a href="#"><button class="logoo">SN_G</button></a>
+                <a href="#"><button class="home">Home</button></a>
+                <a href="#"><button class="home">Latest</button></a>
+                <a href="#"><button class="home">Category</button></a>
+                <a href="#"><button class="home">Services</button></a>
+                <a href="#"><button class="home">Contact</button></a>
+
+                <label for="type-search"></label>
+                <input class="searchbtn" type="search" id="type-search" name="q">
+                <button class="searchbtn_g"><i class="bi bi-search"></i></button>
+
+                <a href="sign_in_1st_page.html"><button class="signin_btn">SIGN IN</button></a>
+                <a href="sign_up_1st_page.html"><button class="signup_btn">SIGN UP</button></a>
+            </div>
+        </div>
+
+
+        <!-- ---------------------------------------------------------------------------->
+        <div class="gallery">
+            <img src="g.jpg" alt="#">
+            <div class="#">
+                <audio id="myAudio">
+                <source src="#" type="audio/mpeg">
+                <source src="#" type="audio/ogg">
+            </audio>
+                <div class="#">
+                    <div id="player">
+                    </div>
+                    <script>
+                        const audio = document.getElementById("myAudio");
+                        const playButton = document.getElementById("playButton");
+                        const pauseButton = document.getElementById("pauseButton");
+                        const skipButton = document.getElementById("skipButton");
+                        const timeDisplay = document.getElementById("time");
+
+                        playButton.addEventListener("click", function() {
+                            audio.play();
+                        });
+
+                        pauseButton.addEventListener("click", function() {
+                            audio.pause();
+                        });
+
+                        skipButton.addEventListener("click", function() {
+                            audio.currentTime = 0;
+                        });
+
+                        audio.addEventListener("timeupdate", function() {
+                            const minutes = Math.floor(audio.currentTime / 60);
+                            const seconds = Math.floor(audio.currentTime % 60);
+                            const durationMinutes = Math.floor(audio.duration / 60);
+                            const durationSeconds = Math.floor(audio.duration % 60);
+
+                            timeDisplay.innerHTML = `${minutes}:${seconds.toString().padStart(2, '0')} / ${durationMinutes}:${durationSeconds.toString().padStart(2, '0')}`;
+                        });
+                    </script>
+                </div>
+                <!-- ---------------------------------------------------- -->
+
+                <!-- ---------------------------------------------------- -->
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-content">
+                <div class="text">Hello, it's Me</div>
+                <div class="name">SURIYAN NGAMJANAD</div>
+                <div class="job">
+                    <span>I'm a</span>
+                    <div class="typing-text">
+                        <span>Developer,</span>
+                        <span>This will give you a new experience for the future.</span>
+
+                    </div>
+                </div>
+                <center>
+                    <div class="buttons">
+                        <button>About Me</button>
+                        <button>Learn more</button>
+                    </div>
+                </center>
+
+            </div>
+        </div>
+
+        <div class="footer ">
+            <br>
+            <hr>
+            <center>
+                <div class="button">
+                    <a href="#"><button class="facebook"><i class="bi bi-facebook"></i></button></a>
+                    <a href="#"><button class="messenger"><i class="bi bi-messenger"></i></button></a>
+                    <a href="#"><button class="whatsapp"><i class="bi bi-whatsapp"></i></button></a>
+                    <a href="#"><button class="twitter "><i class="bi bi-twitter "></i></button></a>
+                    <a href="#"><button class="instagram "><i class="bi bi-instagram "></i></button></a>
+                    <a href="#"><button class="tiktok "><i class="bi bi-tiktok "></i></button></a>
+                    <a href="#"><button class="line "><i class="bi bi-line "></i></button></a>
+                    <a href="#"><button class="youtube "><i class="bi bi-youtube "></i></button></a>
+                    <a href="#"><button class="linkedin "><i class="bi bi-linkedin "></i></button></a>
+                </div>
+            </center>
+
+        </div>
+    </center>
+
+</body>
+
+</html>

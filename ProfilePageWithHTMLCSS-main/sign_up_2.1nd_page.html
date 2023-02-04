@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign_up_2.1nd_page.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sign up | Sign in</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="col-right">
+            <center>
+                <div class="logo">{I-BIT}</div>
+                <div class="text-welcome"></div>
+                <div class="text-detail">Welcome to Sign Up Page </div>
+                <br>
+                <div class="privacy"><br>
+                    <div class="logo_inside">{I-BIT}</div>
+                    <br>
+                    <p>Notice on the protection of personal information</p>
+                    <p>****************</p>
+
+                    <p class="paragraph_1">
+                        Welcome to the system of “I-BIT” developed by I-BIT Co., Ltd. and “Affiliates of I-BIT DEV Corporation Public Company Limited. Please read these terms and conditions carefully. thoroughly before using the service
+                        </a>
+                        <a class="notice" href="sign_up_2.2nd&privatecy_page.html">Notice on the protection of personal information...</a>
+
+                    </p><br>
+
+                </div>
+            </center>
+
+            <!-- ---------------------------------------------------------------------------- -->
+
+            <label for="myCheck">Accept the terms and conditions of use of the service.</label>
+            <input type="checkbox" id="myCheck" onclick="myFunction()">
+            <!-- <p id="text" style="display:none">Accepted!</p> -->
+
+            <script>
+                function myFunction() {
+                    var checkBox = document.getElementById("myCheck");
+                    var text = document.getElementById("text");
+
+                    if (checkBox.checked == true) {
+                        text.style.display = "block";
+                    } else {
+                        text.style.display = "none";
+                    }
+                }
+            </script>
+            <!-- ---------------------------------------------------------------------------- -->
+            <br>
+            <div id="text" style="display:none">
+                <center>
+                    <div class="button">
+                        <a href="sign_up_3rd_page.html"><button class="button button1">Next</button></a>
+                    </div>
+                </center>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>

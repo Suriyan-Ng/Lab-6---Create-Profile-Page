@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.gallery {
+    --s: 280px;
+    /* control the size */
+    display: grid;
+    width: var(--s);
+    aspect-ratio: 1;
+    padding: calc(var(--s)/20);
+    border-radius: 50%;
+    position: relative;
+    text-align: right;
+}
+
+.gallery>img {
+    grid-area: 1/1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.gallery>img {
+    animation: m 12s infinite linear;
+}
+
+@keyframes m {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    background: pink;
+}
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.text_color {
+    color: #4267B2;
+}
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.counterclockwise {
+    /* background-color: #4CAF50; */
+    /* Green */
+    border: none;
+    border-radius: 5px;
+    color: #ff59c7;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+/* .counterclockwise {
+    background-color: #ff59c7;
+    color: white;
+    /* border: 2px solid #35589A; */
+
+
+}
+*/ .counterclockwise:hover {
+    background-color: #4267B2;
+    color: #ff94e0;
+    font-size: 35px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.btn_playing {
+    /* background-color: #4CAF50; */
+    /* Green */
+    
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.btn_playing {
+    background-color: #ff59c7;
+    color: white;
+    /* border: 2px solid #35589A; */
+}
+.btn_playing:hover {
+    background-color: #4267B2;
+    color: #ff94e0;
+    font-size: 35px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.time_display {
+    /* background-color: #4CAF50; */
+    /* Green */
+    
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.time_display {
+    /* background-color: #ff59c7; */
+    /* color: white; */
+    
+    color: #4267B2;
+    /* border: 2px solid #35589A; */
+}
+
+/* .time_display:hover {
+    background-color: #4267B2;
+    color: #ffff;
+    /* font-size: 35px; */
+
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* #player {
+    display: flex;
+    align-items: center;
+} */
+
+/* #playButton,
+#pauseButton,
+#skipButton {
+    background-color: lightgray;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    font-size: 16px;
+    cursor: pointer;
+} */
+
+/* #time {
+    font-size: 20px;
+} */
+
+/* \\\\\\\\\\\\\\\\\\Headertop\\\\\\\\\\\\\\\\\\\\\\ */
+.headertop {
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    /* align-items: center; */
+}
+.headertop .home {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.headertop .home {
+    background-color: pink;
+    color: #ff59c7;
+    /* border: 2px solid #35589A; */
+}
+.headertop .home:hover {
+    /* background-color: #4267B2; */
+    /* color: white; */
+    color: #ff94e0;
+    /* font-size: 20px; */
+}
+
+/* \\\\\\\\\\\\\\\\\\hearchbtn\\\\\\\\\\\\\\\\\\\\\\ */
+.headertop .searchbtn {
+    background-color: pink;
+    /* border: none; */
+    border-radius: 50px;
+    /* padding: 10px px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    /* transition-duration: 0.4s; */
+    cursor: pointer;
+}
+.headertop .searchbtn {
+    color: #ff59c7;
+    border: 2px solid #ff94e0;
+}
+
+/* \\\\\\\\\\\\\\\\btn-ssssss\\\\\\\\\\\\\\\\\\\\\\\\ */
+.headertop .searchbtn_g {
+    background-color: pink;
+    border-radius: 5px;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.headertop .searchbtn_g {
+    color:white;
+    border: 2px solid pink
+}
+.headertop .searchbtn_g:hover {
+    /* color: white; */
+    color: #ff59c7;
+    font-size: 32px;
+}
+
+/* -----------------------signin_btn-------------------------------- */
+.headertop .signin_btn {
+    /* Green */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.headertop .signin_btn {
+    background-color: pink;
+    color: #ff59c7;
+}
+.headertop .signin_btn:hover {
+    /* color: white; */
+    color: #ff94e0;
+    font-size: 26px;
+}
+
+/* -----------------------signup_btn-------------------------------- */
+.headertop .signup_btn {
+    background-color:#000000;
+    border-radius: 50px;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.headertop .signup_btn {
+    color:white;
+    border: 2px solid pink;
+}
+.headertop .signup_btn:hover {
+    /* color: white; */
+    color: #ff59c7;
+    font-size: 32px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.headertop .logoo {
+    /* background-color: #ff59c7; */
+    /* Green */
+    border: none;
+    /* border-radius: 30px; */
+    color: white;
+    padding: 9px 21px;
+    /* text-align: center; */
+    /* text-align: left; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 52px;
+    margin: 4px 2px;
+    /* transition-duration: 0.5s; */
+}
+.logoo {
+    background-color: pink;
+    color: #ff59c7;
+    border: 2px solid #35589A;
+}
+
+/* .logoo:hover {
+    background-color: #4267B2;
+    color: #ff59c7;
+} */
+
+/* --------------footer----------------------- */
+.facebook {
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    color:#000000;
+    padding: 9px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.facebook:hover {
+    background-color: #4267B2;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------*/
+.messenger {
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    padding: 9px 21px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.messenger:hover {
+    background-color: #00B2FF;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------*/
+.whatsapp {
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    padding: 9px 21px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.whatsapp:hover {
+    background-color: #25D366;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------*/
+.twitter {
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    padding: 9px 21px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.twitter:hover {
+    background-color: #1DA1F2;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------*/
+.instagram {
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    padding: 9px 21px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.instagram:hover {
+    background-color: #FD1D1D;
+    background-color: #405DE6;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------*/
+.tiktok {
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    padding: 9px 21px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.tiktok:hover {
+    background-color: #ff0050;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------*/
+.line {
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    padding: 9px 21px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.line:hover {
+    background-color: #06c755;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------*/
+.youtube {
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    padding: 9px 21px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.youtube:hover {
+    background-color: #FF0000;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------*/
+.linkedin {
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    /* color: white; */
+    padding: 9px 21px;
+    text-align: center;
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* .linkedin {
+    background-color: white;
+    color: black;
+    border: 2px solid #35589A;
+} */
+.linkedin:hover {
+    background-color: #4267B2;
+    color: white;
+    font-size: 20px;
+}
+
+/*------------------------------------------------------------------*/
+.content {
+    position: center;
+    top: 33%;
+    left: 7%;
+}
+.content .text {
+    font-size: 27px;
+    color: #2c3e50;
+}
+.content .name {
+    font-size: 48px;
+    color: #000000;
+    margin: 20px 0 0 -3px;
+    /*T R B L*/
+}
+.content .job {
+    font-size: 36px;
+    color: #000000;
+    display: flex;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.content .job .typing-text {
+    color: white;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #1de2d1;
+    animation: typing 12s steps(24) infinite;
+    /* background: red; */
+}
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 48ch;
+    }
+    100% {
+        width: 48ch;
+    }
+}
+.content .buttons {
+    margin: 20px 0 0 50px;
+}
+.content .buttons button {
+    color: #fff;
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background: linear-gradient(90deg,
+    #497174 10%,
+    #EB6440 100%);
+    transition: all 0.3s ease;
+}
+.content .buttons button:hover {
+    transform: scale(.98);
+}
